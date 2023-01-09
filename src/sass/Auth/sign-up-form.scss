@@ -1,0 +1,21 @@
+@use '../variables' as v;
+
+.sign-up-form {
+  display: flex !important;
+  width: min(90%, 400px);
+  margin-inline: auto;
+  background-image: none;
+
+  label {
+    color: #fff;
+  }
+  input {
+    padding: 0.7em 1.1em;
+    width: 100%;
+  }
+  a {
+    text-decoration: none;
+    text-align: center;
+    color: v.$Grayish-Violet;
+  }
+}

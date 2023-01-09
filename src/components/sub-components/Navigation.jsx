@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../../sass/sub-components/navigation.scss'
+import AuthContext from '../../store/AuthContext'
 
 function Navigation({ className, display }) {
+  const ctx = useContext(AuthContext)
+
   return (
     <nav className={className} style={{ display: display }}>
       <ul>
@@ -9,8 +12,7 @@ function Navigation({ className, display }) {
         <li>Pricing</li>
         <li>Resources</li>
         <li></li>
-        <li>Login</li>
-        <li>Sign up</li>
+        <li onClick={ctx.logout}>Logout</li>
       </ul>
     </nav>
   )

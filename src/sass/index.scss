@@ -1,9 +1,16 @@
 @use 'resets';
+@use 'variables' as v;
 
 body {
   font-family: 'Poppins', 'Nunito', Verdana, Geneva, Tahoma, sans-serif;
+  display: grid;
+  place-items: center;
 
   img {
     max-width: 100%;
   }
+}
+main {
+  max-width: 1600px;
+  margin-inline: auto;
 }

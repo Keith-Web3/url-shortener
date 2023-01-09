@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Form from './Form'
 import Statistic from './sub-components/Statistic'
 import '../sass/statistics.scss'
+import ShortenedUrls from './ShortenedUrls'
 
 const STATISTICS_DATA = [
   {
@@ -21,9 +22,12 @@ const STATISTICS_DATA = [
   },
 ]
 function Statistics() {
+  const [urls, setUrls] = useState(null)
+
   return (
     <section className="statistics section--2">
-      <Form />
+      <Form setUrls={setUrls} />
+      <ShortenedUrls urls={urls} setUrls={setUrls} />
       <h2>Advanced Statistics</h2>
       <p>
         Track how your links are performing across the web with our advanced

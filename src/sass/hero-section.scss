@@ -3,9 +3,21 @@
 .hero-section {
   padding: v.$spacer;
   padding-bottom: v.$spacer * 6;
+  @media (min-width: 650px) {
+    display: grid;
+    column-gap: v.$spacer;
+    grid-template: repeat(2, auto) / minmax(auto, 420px) 1fr;
+    grid-template-areas: 'header header' 'desc img';
+    align-items: center;
+    padding-inline: v.$spacer * 3;
+  }
 
   &__desc {
     text-align: center;
+    grid-area: desc;
+    @media (min-width: 650px) {
+      text-align: start;
+    }
     h1 {
       color: v.$Very-Dark-Blue;
       font-weight: 700;
@@ -20,5 +32,10 @@
   }
   & > img {
     margin-top: v.$spacer * 2;
+    grid-area: img;
+    @media (min-width: 650px) {
+      min-width: 330px;
+      margin-left: auto;
+    }
   }
 }

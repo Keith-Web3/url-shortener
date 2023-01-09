@@ -1,10 +1,17 @@
 @use 'variables' as v;
 
 .statistics {
-  background-color: darken(whitesmoke, 5%);
+  background-color: whitesmoke;
   padding: v.$spacer;
   text-align: center;
 
+  @media (min-width: 650px) {
+    padding-inline: v.$spacer * 3;
+    & > p {
+      max-width: 500px;
+      margin-inline: auto;
+    }
+  }
   form {
     transform: translateY(-50%);
   }
@@ -22,7 +29,17 @@
     gap: v.$spacer * 4;
     margin-block: v.$spacer * 3.5;
     position: relative;
+    max-width: 400px;
+    margin-inline: auto;
 
+    @media (min-width: 924px) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: v.$spacer * 1.5;
+      justify-content: space-between;
+      max-width: unset;
+      margin-inline: unset;
+      margin-bottom: v.$spacer * 6;
+    }
     &::after {
       content: '';
       position: absolute;
@@ -30,6 +47,13 @@
       inset: 0 50% 0 auto;
       transform: translateX(50%);
       background-color: v.$Cyan;
+
+      @media (min-width: 924px) {
+        inset: 50% 0 auto 0;
+        width: unset;
+        height: 10px;
+        transform: translate(0, -50%);
+      }
     }
   }
 }

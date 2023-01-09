@@ -8,10 +8,15 @@ form {
   background-position: top center;
   padding: v.$spacer * 1.5;
   border-radius: 8px;
-
   display: flex;
   gap: v.$spacer;
   flex-direction: column;
+  @media (min-width: 650px) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    max-width: 700px;
+    margin-inline: auto;
+  }
 
   input,
   button {

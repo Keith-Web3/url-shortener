@@ -4,12 +4,21 @@
   background-image: url(../assets/bg-boost-mobile.svg);
   padding: v.$spacer * 5 v.$spacer;
   background-color: v.$Dark-Violet;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 650px) {
+    background-image: url(../assets/bg-boost-desktop.svg);
+  }
 
   h3 {
     font-size: 1.6rem;
     font-weight: 700;
     color: #fff;
     text-align: center;
+    @media (min-width: 650px) {
+      font-size: 2.3rem;
+    }
   }
   button {
     display: block;
