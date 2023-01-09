@@ -4,6 +4,7 @@ nav {
   background-color: v.$Dark-Violet;
   color: #fff;
   padding: v.$spacer;
+  padding-bottom: v.$spacer * 1.7;
   grid-area: nav;
   width: min(100%, 320px);
   margin-inline: auto;

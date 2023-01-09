@@ -1,9 +1,9 @@
 import React from 'react'
 import '../../sass/sub-components/navigation.scss'
 
-function Navigation() {
+function Navigation({ className, display }) {
   return (
-    <nav>
+    <nav className={className} style={{ display: display }}>
       <ul>
         <li>Features</li>
         <li>Pricing</li>
