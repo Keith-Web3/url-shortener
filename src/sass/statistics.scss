@@ -1,7 +1,11 @@
 @use 'variables' as v;
 
-.statistics {
+.section--2 {
   background-color: whitesmoke;
+}
+.statistics {
+  max-width: 1600px;
+  margin-inline: auto;
   padding: v.$spacer;
   text-align: center;
 

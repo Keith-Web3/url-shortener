@@ -3,10 +3,12 @@
 .hero-section {
   padding: v.$spacer;
   padding-bottom: v.$spacer * 6;
+  max-width: 1600px;
+  margin-inline: auto;
   @media (min-width: 650px) {
     display: grid;
     column-gap: v.$spacer;
-    grid-template: repeat(2, auto) / minmax(auto, 420px) 1fr;
+    grid-template: repeat(2, auto) / minmax(auto, 540px) 1fr;
     grid-template-areas: 'header header' 'desc img';
     align-items: center;
     padding-inline: v.$spacer * 3;
@@ -23,11 +25,17 @@
       font-weight: 700;
       font-size: 2.3rem;
       line-height: 1.15;
+      @media (min-width: 650px) {
+        font-size: 2.7rem;
+      }
     }
     p {
       margin-block: v.$spacer * 0.5 v.$spacer;
       font-size: 1.15rem;
       color: v.$Grayish-Violet;
+      @media (min-width: 650px) {
+        font-size: 1.3rem;
+      }
     }
   }
   & > img {

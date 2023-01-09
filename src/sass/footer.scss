@@ -1,6 +1,6 @@
 @use 'variables' as v;
 
-footer {
+footer > div {
   background-color: v.$Very-Dark-Violet;
   padding: v.$spacer * 3 v.$spacer;
 

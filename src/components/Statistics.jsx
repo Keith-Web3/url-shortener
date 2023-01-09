@@ -25,18 +25,20 @@ function Statistics() {
   const [urls, setUrls] = useState(null)
 
   return (
-    <section className="statistics section--2">
-      <Form setUrls={setUrls} />
-      <ShortenedUrls urls={urls} setUrls={setUrls} />
-      <h2>Advanced Statistics</h2>
-      <p>
-        Track how your links are performing across the web with our advanced
-        statistics dashboard
-      </p>
-      <div className="statistics__container">
-        {STATISTICS_DATA.map(data => (
-          <Statistic {...data} />
-        ))}
+    <section className="section--2">
+      <div className="statistics ">
+        <Form setUrls={setUrls} />
+        <ShortenedUrls urls={urls} setUrls={setUrls} />
+        <h2>Advanced Statistics</h2>
+        <p>
+          Track how your links are performing across the web with our advanced
+          statistics dashboard
+        </p>
+        <div className="statistics__container">
+          {STATISTICS_DATA.map(data => (
+            <Statistic {...data} />
+          ))}
+        </div>
       </div>
     </section>
   )

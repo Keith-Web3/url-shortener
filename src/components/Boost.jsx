@@ -4,9 +4,11 @@ import '../sass/boost.scss'
 
 function Boost() {
   return (
-    <section className="boost section--3">
-      <h3>Boost your links today</h3>
-      <Button>Get started</Button>
+    <section className="section--3">
+      <div className="boost">
+        <h3>Boost your links today</h3>
+        <Button>Get started</Button>
+      </div>
     </section>
   )
 }
