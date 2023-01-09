@@ -1,0 +1,21 @@
+@use 'variables' as v;
+
+form {
+  background-image: url('../assets/bg-shorten-mobile.svg');
+  background-color: v.$Dark-Violet;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: v.$spacer * 1.5;
+  border-radius: 8px;
+
+  display: flex;
+  gap: v.$spacer;
+  flex-direction: column;
+
+  input,
+  button {
+    padding: v.$spacer * 0.75 v.$spacer * 1.2;
+    border-radius: 5px;
+  }
+}

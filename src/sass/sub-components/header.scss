@@ -1,0 +1,22 @@
+@use '../variables' as v;
+
+header {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(2, auto);
+  grid-template-areas: 'logo harmburger' 'nav nav';
+  align-items: center;
+  gap: v.$spacer;
+  margin-bottom: v.$spacer;
+
+  img {
+    object-fit: contain;
+    grid-area: logo;
+    width: 100px;
+
+    &:last-child {
+      width: 20px;
+      grid-area: harmburger;
+      justify-self: end;
+    }
+  }
+}

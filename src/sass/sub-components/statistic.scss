@@ -1,0 +1,26 @@
+@use '../variables' as v;
+
+.statistic {
+  background-color: #fff;
+  padding: v.$spacer * 1.5;
+  position: relative;
+  border-radius: 5px;
+  z-index: 1;
+
+  picture {
+    aspect-ratio: 1 / 1;
+    width: 55px;
+    padding: v.$spacer;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background-color: v.$Dark-Violet;
+    position: absolute;
+    inset: 0 50% auto auto;
+    transform: translate(50%, -50%);
+  }
+  p,
+  h3 {
+    margin-top: v.$spacer;
+  }
+}

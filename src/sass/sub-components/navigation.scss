@@ -1,0 +1,31 @@
+@use '../variables' as v;
+
+nav {
+  background-color: v.$Dark-Violet;
+  color: #fff;
+  padding: v.$spacer;
+  grid-area: nav;
+  width: min(100%, 320px);
+  margin-inline: auto;
+  border-radius: 5px;
+
+  ul {
+    list-style-type: none;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 2.8;
+
+    li:empty {
+      height: 1px;
+      width: 100%;
+      background-color: rgba(v.$Gray, 0.1);
+      margin-block: v.$spacer * 0.8;
+    }
+    li:last-child {
+      background-color: v.$Cyan;
+      border-radius: 100vh;
+      cursor: pointer;
+    }
+  }
+}

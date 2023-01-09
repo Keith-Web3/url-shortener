@@ -1,0 +1,10 @@
+@use '../variables' as v;
+
+button {
+  all: unset;
+  font-weight: 500;
+  color: #fff;
+  padding: v.$spacer * 0.75 v.$spacer * 1.5;
+  background-color: v.$Cyan;
+  text-align: center;
+}

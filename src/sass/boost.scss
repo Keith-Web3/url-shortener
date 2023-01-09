@@ -1,0 +1,19 @@
+@use 'variables' as v;
+
+.boost {
+  background-image: url(../assets/bg-boost-mobile.svg);
+  padding: v.$spacer * 5 v.$spacer;
+  background-color: v.$Dark-Violet;
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+  }
+  button {
+    display: block;
+    margin: 1em auto 0;
+    border-radius: 3px;
+  }
+}

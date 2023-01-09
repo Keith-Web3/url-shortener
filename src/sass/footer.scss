@@ -1,0 +1,30 @@
+@use 'variables' as v;
+
+footer {
+  background-color: v.$Very-Dark-Violet;
+  padding: v.$spacer * 3 v.$spacer;
+
+  img {
+    margin: 0 auto v.$spacer;
+  }
+  ul {
+    list-style-type: none;
+
+    li {
+      &:first-child {
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 3;
+      }
+      color: v.$Gray;
+      font-weight: 500;
+      text-align: center;
+      line-height: 2;
+    }
+  }
+  .icons {
+    display: flex;
+    margin-top: v.$spacer * 2;
+  }
+}

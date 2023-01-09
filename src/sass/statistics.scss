@@ -1,0 +1,35 @@
+@use 'variables' as v;
+
+.statistics {
+  background-color: darken(whitesmoke, 5%);
+  padding: v.$spacer;
+  text-align: center;
+
+  form {
+    transform: translateY(-50%);
+  }
+  h2 {
+    color: v.$Very-Dark-Blue;
+    font-size: 1.95rem;
+    font-weight: 700;
+  }
+  p {
+    color: v.$Grayish-Violet;
+    font-size: 1.1rem;
+  }
+  &__container {
+    display: grid;
+    gap: v.$spacer * 4;
+    margin-block: v.$spacer * 3.5;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      inset: 0 50% 0 auto;
+      transform: translateX(50%);
+      background-color: v.$Cyan;
+    }
+  }
+}
