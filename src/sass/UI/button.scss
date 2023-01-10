@@ -8,4 +8,9 @@ button {
   background-color: v.$Cyan;
   text-align: center;
   cursor: pointer;
+  transition: transform 200ms linear;
+
+  &:active {
+    transform: scale(1.05);
+  }
 }

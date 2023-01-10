@@ -7,6 +7,10 @@
   border-top: 1px solid rgba(v.$Gray, 0.2);
   padding: v.$spacer;
 
+  &:last-child {
+    margin-bottom: v.$spacer * 3;
+  }
+
   a {
     text-decoration: none;
     color: v.$Cyan;
