@@ -1,0 +1,14 @@
+@use '../variables' as v;
+
+.shortened-url {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(v.$Gray, 0.2);
+  padding: v.$spacer;
+
+  a {
+    text-decoration: none;
+    color: v.$Cyan;
+  }
+}

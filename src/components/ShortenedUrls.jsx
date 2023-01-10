@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import '../sass/shortened.scss'
 import ShortenedUrl from './sub-components/ShortenedUrl'
 
 function ShortenedUrls({ urls, setUrls }) {
