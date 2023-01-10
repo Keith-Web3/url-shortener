@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import '../sass/shortened.scss'
-import ShortedUrl from './sub-components/ShortedUrl'
+import ShortenedUrl from './sub-components/ShortenedUrl'
 
 function ShortenedUrls({ urls, setUrls }) {
   useEffect(() => {
@@ -12,7 +12,7 @@ function ShortenedUrls({ urls, setUrls }) {
     <div>
       {urls?.length &&
         urls.map((el, idx) => (
-          <ShortedUrl key={idx} real={el.real} short={el.short} />
+          <ShortenedUrl key={idx} real={el.real} short={el.short} />
         ))}
 
       {!urls?.length && <p></p>}
