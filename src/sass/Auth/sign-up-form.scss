@@ -3,8 +3,12 @@
 .sign-up-form {
   display: flex !important;
   width: min(90%, 400px);
-  margin-inline: auto;
   background-image: none;
+  position: absolute;
+  inset: 50% 0 0 0 !important;
+  transform: translateY(-50%) !important;
+  margin-inline: auto;
+  height: max-content;
 
   label {
     color: #fff;

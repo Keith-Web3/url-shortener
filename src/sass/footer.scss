@@ -3,7 +3,11 @@
 footer > div {
   background-color: v.$Very-Dark-Violet;
   padding: v.$spacer * 3 v.$spacer;
-
+  @media (min-width: 720px) {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: start;
+  }
   img {
     margin: 0 auto v.$spacer;
   }
@@ -16,6 +20,11 @@ footer > div {
         font-weight: 700;
         font-size: 1.2rem;
         line-height: 3;
+
+        @media (min-width: 720px) {
+          line-height: unset;
+          margin-bottom: v.$spacer * 2;
+        }
       }
       color: v.$Gray;
       font-weight: 500;
@@ -26,5 +35,13 @@ footer > div {
   .icons {
     display: flex;
     margin-top: v.$spacer * 2;
+    @media (min-width: 720px) {
+      margin-top: 0;
+    }
+
+    img {
+      width: 25px;
+      object-fit: contain;
+    }
   }
 }

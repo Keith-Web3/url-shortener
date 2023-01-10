@@ -3,8 +3,8 @@
 
 body {
   font-family: 'Poppins', 'Nunito', Verdana, Geneva, Tahoma, sans-serif;
-  display: grid;
-  place-items: center;
+  position: relative;
+  min-height: 100vh;
 
   img {
     max-width: 100%;
