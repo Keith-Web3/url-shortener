@@ -25,10 +25,13 @@ function SignUpForm({ signedUp }) {
   function signUpHandler() {
     const currentEmail = emailRef.current.value
     const currentPassword = passwordRef.current.value
+    console.log(import.meta.env)
 
     axios
       .post(
-        'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDQTFFPbZ51yNGf0uUtx2sS7NOkBNq5eN8',
+        `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${
+          import.meta.env.VITE_FIREBASE_KEY
+        }`,
         {
           email: currentEmail,
           password: currentPassword,
@@ -50,7 +53,9 @@ function SignUpForm({ signedUp }) {
 
     axios
       .post(
-        'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDQTFFPbZ51yNGf0uUtx2sS7NOkBNq5eN8',
+        `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${
+          import.meta.env.VITE_FIREBASE_KEY
+        }`,
         {
           email: currentEmail,
           password: currentPassword,
