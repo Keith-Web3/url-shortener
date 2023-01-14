@@ -15,7 +15,6 @@ function Form({ setUrls }) {
         `https://api.shrtco.de/v2/shorten?url=${link}`
       )
       if (!res?.data?.ok) throw new Error(res?.data?.error)
-      console.log(res)
       localStorage.setItem(
         'savedUrls',
         JSON.stringify([

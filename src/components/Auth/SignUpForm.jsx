@@ -25,7 +25,6 @@ function SignUpForm({ signedUp }) {
   function signUpHandler() {
     const currentEmail = emailRef.current.value
     const currentPassword = passwordRef.current.value
-    console.log(import.meta.env)
 
     axios
       .post(
@@ -40,7 +39,6 @@ function SignUpForm({ signedUp }) {
         options
       )
       .then(res => {
-        console.log(res)
         if (!res.data)
           throw new Error(res.response.data.error || 'request failed')
         ctx.login(res.data.idToken)
@@ -64,7 +62,6 @@ function SignUpForm({ signedUp }) {
         options
       )
       .then(res => {
-        console.log(res)
         if (!res.data)
           throw new Error(res.response.data.error || 'request failed')
         ctx.login(res.data.idToken)
