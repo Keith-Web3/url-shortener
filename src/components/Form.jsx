@@ -24,6 +24,7 @@ function Form({ setUrls }) {
           {
             real: link,
             short: res.data.result.short_link,
+            shortLink: res.data.result.full_short_link,
           },
         ])
       )

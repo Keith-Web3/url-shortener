@@ -1,11 +1,13 @@
 import React from 'react'
 import '../../sass/sub-components/shortened-url.scss'
 
-function ShortedUrl({ real, short }) {
+function ShortedUrl({ real, short, shortLink }) {
   return (
     <div className="shortened-url">
       <p>{real}</p>
-      <a href={short}>{short}</a>
+      <a href={shortLink} target="_blank">
+        {short}
+      </a>
     </div>
   )
 }

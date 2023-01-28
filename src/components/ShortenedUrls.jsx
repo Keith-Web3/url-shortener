@@ -10,9 +10,16 @@ function ShortenedUrls({ urls, setUrls }) {
   return (
     <div>
       {urls?.length &&
-        urls.map((el, idx) => (
-          <ShortenedUrl key={idx} real={el.real} short={el.short} />
-        ))}
+        urls.map((el, idx) => {
+          return (
+            <ShortenedUrl
+              key={idx}
+              real={el.real}
+              short={el.short}
+              shortLink={el.shortLink}
+            />
+          )
+        })}
 
       {!urls?.length && <p></p>}
     </div>
